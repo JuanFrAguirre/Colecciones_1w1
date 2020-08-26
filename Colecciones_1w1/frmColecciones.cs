@@ -87,5 +87,26 @@ namespace Colecciones_1w1
       this.cboCursos.Items.RemoveAt(this.cboCursos.SelectedIndex);
       this.lstCursos.Items.RemoveAt(this.lstCursos.SelectedIndex);
     }
+
+    private void btnLimpiarLista_Click(object sender, EventArgs e)
+    {
+      this.cboCursos.Items.Clear();
+      this.lstCursos.Items.Clear();
+    }
+
+    private void btnMostrarPosicion_Click(object sender, EventArgs e)
+    {
+      lblPosicion.Text = this.lstCursos.SelectedIndex.ToString();
+    }
+
+    private void btnMostrarCantidad_Click(object sender, EventArgs e)
+    {
+      lblCantidad.Text = this.lstCursos.Items.Count.ToString();
+    }
+
+    private void btnMostrarItem_Click(object sender, EventArgs e)
+    {
+      lblItem.Text = this.lstCursos.SelectedItem.ToString();
+    }
   }
 }
