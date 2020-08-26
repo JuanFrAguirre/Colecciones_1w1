@@ -19,13 +19,17 @@ namespace Colecciones_1w1
 
     private void frmColecciones_Load_1(object sender, EventArgs e)
     {
+      this.cboCursos.Items.Clear();
       this.cboCursos.Items.Add("1w1");
       this.cboCursos.Items.Add("1w2");
       this.cboCursos.Items.Add("1w3");
+      this.cboCursos.SelectedIndex = 0;
 
+      this.lstCursos.Items.Clear();
       this.lstCursos.Items.Add("1w1");
       this.lstCursos.Items.Add("1w2");
       this.lstCursos.Items.Add("1w3");
+      this.lstCursos.SelectedIndex = this.lstCursos.Items.Count - 1;
     }
 
     private void btnCargar_Click(object sender, EventArgs e)
